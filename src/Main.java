@@ -1,10 +1,7 @@
 import desafios.d1.ExceptionNegativeNumbers;
 import desafios.d1.OrderBy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.logging.Logger;
 
 public class Main {
@@ -46,6 +43,10 @@ public class Main {
                     }
             }catch (ExceptionNegativeNumbers e){
                 System.out.println("Erro: " + e.getMessage());
+            }
+            catch (InputMismatchException e){
+                System.out.println("Digite um numero valido!");
+                input.next(); //Limpa o buffer de entrada
             }
         }
     }
