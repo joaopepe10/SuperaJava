@@ -22,6 +22,7 @@ public class OrderBy {
         this.numbers.add(i);
     }
 
+    //Ordenacao atraves da classe ArrayList
     public List<Integer> orderBy(){
         //Fazendo a separacao dos numeros pares e impares
         for (Integer i: this.numbers){
@@ -39,6 +40,4 @@ public class OrderBy {
         this.finalList.addAll(this.odd);
         return this.finalList;
     }
-
-
 }
