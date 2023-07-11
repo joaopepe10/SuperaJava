@@ -41,20 +41,49 @@ public class OrderBy {
 
     public void bubbleSort(){
         //CRIANDO UMA ARRAY E ADICIONANDO NUMEROS ENTRE 1 E 100 NELE PARA FAZER A ORDENACAO
-        int[] x = new int[10];
-        int[] pares = new int[5];
-        int[] impares = new int[5];
+        int[] x = {9, 7, 6, 5, 3 ,2 , 1, 8, 4};
+        int aux = 0;
+        int tamanhoPar = 0;
+        int tamanhoImpar = 0;
         Random random = new Random();
-        for (int i = 0; i < x.length; i++){
-            x[i] = random.nextInt(100 - 1 +1)+1;
-        }
-        //SEPARANDO PARES DE IMPARES
-        for(int i = 0;i< x.length; i++){
+        /*for (int i = 0; i < x.length; i++){
+            x[i] = random.nextInt(100 - 1 + 1)+1;
+        }*/
+        //OBTENDO O TAMANHO DO ARRAY DE PARES E DE IMPARES
+        for(int i = 0;i < x.length; ++i){
             if (x[i] % 2 == 0){
-                pares[i] = x[i];
-            }else if (x[i] % 2 ==1){
-                impares[i] = x[i];
+                tamanhoPar+=1;
+            }else if (x[i] % 2 == 1){
+                tamanhoImpar+=1;
             }
+        }
+        int pares[] = new int[tamanhoPar];
+        int impares[] = new int[tamanhoImpar];
+
+        //ADCIONANDO OS IMPARES E PARES EM SUAS DEVIDAS LISTAS
+        int indexPar = 0;
+        int indexImpar = 0;
+        for(int i = 0;i < x.length; ++i){
+            if (x[i] % 2 == 0){
+                pares[indexPar] = x[i];
+                indexPar++;
+            }else {
+                impares[indexImpar] = x[i];
+                indexImpar++;
+            }
+        }
+
+        for (int i = 0;i < pares.length;++i){
+            for (int j = 0;j < pares.length - 1;++j){
+                if (pares[j] > pares[j + 1]){
+                    aux = pares[j];
+                    pares[j] = pares[j+1];
+                    pares[j + 1] = aux;
+                }
+            }
+        }
+        for (int i = 0;i < pares.length;i++){
+            System.out.print(pares[i]+" ");
         }
 
     }
