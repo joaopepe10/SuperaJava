@@ -30,6 +30,7 @@ public class OrderBy {
                 this.odd.add(i);
             }
         }
+        //Metodos de ordenacao que ja vem prontos na classe ArrayList
         pair.sort(Comparator.naturalOrder());
         odd.sort(Comparator.reverseOrder());
 
