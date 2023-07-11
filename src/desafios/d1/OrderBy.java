@@ -1,8 +1,6 @@
 package desafios.d1;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class OrderBy {
     private List<Integer> numbers = new ArrayList<>();
@@ -39,5 +37,25 @@ public class OrderBy {
         this.finalList.addAll(this.pair);
         this.finalList.addAll(this.odd);
         return this.finalList;
+    }
+
+    public void bubbleSort(){
+        //CRIANDO UMA ARRAY E ADICIONANDO NUMEROS ENTRE 1 E 100 NELE PARA FAZER A ORDENACAO
+        int[] x = new int[10];
+        int[] pares = new int[5];
+        int[] impares = new int[5];
+        Random random = new Random();
+        for (int i = 0; i < x.length; i++){
+            x[i] = random.nextInt(100 - 1 +1)+1;
+        }
+        //SEPARANDO PARES DE IMPARES
+        for(int i = 0;i< x.length; i++){
+            if (x[i] % 2 == 0){
+                pares[i] = x[i];
+            }else if (x[i] % 2 ==1){
+                impares[i] = x[i];
+            }
+        }
+
     }
 }

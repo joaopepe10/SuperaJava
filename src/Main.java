@@ -49,5 +49,6 @@ public class Main {
                 input.next(); //Limpa o buffer de entrada
             }
         }
+        orderBy.bubbleSort();
     }
 }
