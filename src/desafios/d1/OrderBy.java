@@ -49,6 +49,10 @@ public class OrderBy {
         /*for (int i = 0; i < x.length; i++){
             x[i] = random.nextInt(100 - 1 + 1)+1;
         }*/
+        System.out.println("Lista desorndenada: ");
+        for (int i = 0; i< x.length;++i){
+            System.out.print(x[i]+" ");
+        }
         //OBTENDO O TAMANHO DO ARRAY DE PARES E DE IMPARES
         for(int i = 0;i < x.length; ++i){
             if (x[i] % 2 == 0){
@@ -91,7 +95,7 @@ public class OrderBy {
                 }
             }
         }
-        System.out.println("Numeros pares: ");
+        System.out.println("\nNumeros pares: ");
         for (int i = 0;i < pares.length;++i){
             System.out.print(pares[i]+" ");
         }

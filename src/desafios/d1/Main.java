@@ -1,3 +1,5 @@
+package desafios.d1;
+
 import desafios.d1.ExceptionNegativeNumbers;
 import desafios.d1.OrderBy;
 
