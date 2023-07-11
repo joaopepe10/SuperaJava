@@ -72,7 +72,7 @@ public class OrderBy {
                 indexImpar++;
             }
         }
-
+        //COM OS NUMEROS PARES SEPARADOS POSSO ORDENAR OS MESMOS COM O BUBBLE SORT
         for (int i = 0;i < pares.length;++i){
             for (int j = 0;j < pares.length - 1;++j){
                 if (pares[j] > pares[j + 1]){
@@ -82,8 +82,36 @@ public class OrderBy {
                 }
             }
         }
-        for (int i = 0;i < pares.length;i++){
+        for (int i = 0;i < impares.length;++i){
+            for (int j = 0;j < impares.length - 1;++j){
+                if (impares[j] < impares[j + 1]){
+                    aux = impares[j];
+                    impares[j] = impares[j+1];
+                    impares[j + 1] = aux;
+                }
+            }
+        }
+        System.out.println("Numeros pares: ");
+        for (int i = 0;i < pares.length;++i){
             System.out.print(pares[i]+" ");
+        }
+        System.out.println("\nNumeros impares: ");
+        for (int i = 0; i< impares.length; ++i){
+            System.out.print(impares[i]+" ");
+        }
+
+        //REFAZENDO A LISTA COM OS NUMEROS PARES E IMPARES
+        for (int i = 0; i < (impares.length + pares.length); ++i){
+            if(i < pares.length){
+                x[i] = pares[i];
+            } else {
+                //ARRAY SUBTRAIDO PELO TAMANHO DE PARES.LENGTH PARA CHEGAR NO INDICE 0 DE IMPARES E TERMINAR DE ATRIBUIR AO INDICE ATUAL DE X
+                x[i] = impares[i - pares.length];
+            }
+        }
+        System.out.println("\nNumeros ordenados: ");
+        for (int i = 0; i< x.length; ++i){
+            System.out.print(x[i]+" ");
         }
 
     }
