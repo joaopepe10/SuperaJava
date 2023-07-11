@@ -65,6 +65,7 @@ public class MinGrades {
         //CALCULANDO QUANTIDADE DE MOEDAS USADAS
         for(int i = 0; i < coins.length; ++i){
             if (value > coins[i]){
+                //ARREDONDANDO PARA DUAS CASAS DECIMAIS O VALUE
                 value = Math.round(value * 100.0) / 100.0;
                 double result = value / coins[i];
                 //CASTING PARA OBTER O VALOR INTEIRO DA QUANTIDADE DE MOEDAS DE DETERMINADO TIPO DE ACORDO COM O INDICE
