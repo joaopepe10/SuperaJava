@@ -40,23 +40,5 @@ public class OrderBy {
         return this.finalList;
     }
 
-    public List<Integer> getNumbers() {
-        return numbers;
-    }
 
-    public List<Integer> getPair() {
-        return pair;
-    }
-
-    public void setPair(List<Integer> pair) {
-        this.pair = pair;
-    }
-
-    public List<Integer> getOdd() {
-        return odd;
-    }
-
-    public void setOdd(List<Integer> odd) {
-        this.odd = odd;
-    }
 }
