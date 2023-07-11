@@ -1,6 +1,7 @@
 package desafios.d1;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class OrderBy {
@@ -29,6 +30,9 @@ public class OrderBy {
                 this.odd.add(i);
             }
         }
+        pair.sort(Comparator.naturalOrder());
+        odd.sort(Comparator.reverseOrder());
+
         this.finalList.addAll(this.pair);
         this.finalList.addAll(this.odd);
         return this.finalList;
