@@ -23,6 +23,7 @@ public class OrderBy {
     }
 
     public List<Integer> orderBy(){
+        //Fazendo a separacao dos numeros pares e impares
         for (Integer i: this.numbers){
             if(i % 2 == 0){
                 this.pair.add(i);
