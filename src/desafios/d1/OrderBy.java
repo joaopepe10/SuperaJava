@@ -38,6 +38,21 @@ public class OrderBy {
         this.finalList.addAll(this.odd);
         return this.finalList;
     }
+    public List<Integer> orderByLambda(){
+        //USANDO A FUNCAO LAMBDA PARA DEIXAR O CODIGO MENOR E MAIS FACIL DE VIZUALIZAR
+        this.numbers.forEach((v)->{
+            if (v % 2 == 0){
+                pair.add(v);
+            }else {
+                odd.add(v);
+            }
+        });
+        this.finalList.addAll(this.pair);
+        this.finalList.addAll(this.odd);
+        return this.finalList;
+    }
+
+
 
     public void bubbleSort(){
         //CRIANDO UMA ARRAY E ADICIONANDO NUMEROS ENTRE 1 E 100 NELE PARA FAZER A ORDENACAO
