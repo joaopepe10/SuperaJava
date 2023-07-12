@@ -47,6 +47,9 @@ public class OrderBy {
                 odd.add(v);
             }
         });
+        pair.sort(Comparator.naturalOrder());
+        odd.sort(Comparator.reverseOrder());
+
         this.finalList.addAll(this.pair);
         this.finalList.addAll(this.odd);
         return this.finalList;
