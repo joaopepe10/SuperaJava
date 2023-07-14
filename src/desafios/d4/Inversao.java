@@ -12,7 +12,9 @@ public class Inversao {
 
     public void inversaoString(){
         int tamTotal = getTexto().length();
-        texto.
+        String esq = texto.substring(0,11);
+        String dir = texto.substring(11);
+
     }
 
     public String getTexto() {
