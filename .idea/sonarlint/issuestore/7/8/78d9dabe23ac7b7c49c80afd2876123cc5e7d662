@@ -1,0 +1,31 @@
+
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(­Û¯Ô8íÃË¶”1
+T	java:S106&"9Replace this use of System.out or System.err by a logger.(ª›ƒz8íÃË¶”1
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¥š–çûÿÿÿÿ8íÃË¶”1
+U	java:S106("9Replace this use of System.out or System.err by a logger.(Ú‹°Ò8íÃË¶”1
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(…“ß°8íÃË¶”1
+U	java:S106*"9Replace this use of System.out or System.err by a logger.(Ñ¤ÑÌ8íÃË¶”1
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(Ÿáîüÿÿÿÿ8îÃË¶”1
+T	java:S106,"9Replace this use of System.out or System.err by a logger.(òÖã`8îÃË¶”1
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(—ÁˆÑ8îÃË¶”1
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(­²ÑÄşÿÿÿÿ8îÃË¶”1
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(²•ñ øÿÿÿÿ8îÃË¶”1
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(Óï‚‚8îÃË¶”1
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(Ø¬Ù£8îÃË¶”1
+U	java:S1062"9Replace this use of System.out or System.err by a logger.(áÁÊå8îÃË¶”1
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(­Û¯Ô8ïÃË¶”1
+T	java:S106M"9Replace this use of System.out or System.err by a logger.(ª›ƒz8ïÃË¶”1
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(¥š–çûÿÿÿÿ8ïÃË¶”1
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(Ú‹°Ò8ïÃË¶”1
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(…“ß°8ğÃË¶”1
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(Ñ¤ÑÌ8ğÃË¶”1
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(Ÿáîüÿÿÿÿ8ğÃË¶”1
+T	java:S106S"9Replace this use of System.out or System.err by a logger.(òÖã`8ğÃË¶”1
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(—ÁˆÑ8ğÃË¶”1
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(­²ÑÄşÿÿÿÿ8ğÃË¶”1
+Z	java:S106V"9Replace this use of System.out or System.err by a logger.(²•ñ øÿÿÿÿ8ğÃË¶”1
+U	java:S106W"9Replace this use of System.out or System.err by a logger.(Óï‚‚8ğÃË¶”1
+U	java:S106X"9Replace this use of System.out or System.err by a logger.(Ø¬Ù£8ğÃË¶”1
+U	java:S106Y"9Replace this use of System.out or System.err by a logger.(áÁÊå8ğÃË¶”1
+Q
+java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8èœÌ¶”1
