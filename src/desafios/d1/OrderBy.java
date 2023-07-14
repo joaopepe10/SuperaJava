@@ -56,6 +56,37 @@ public class OrderBy {
     }
 
 
+    public List<Integer> getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(List<Integer> numbers) {
+        this.numbers = numbers;
+    }
+
+    public List<Integer> getPair() {
+        return pair;
+    }
+
+    public void setPair(List<Integer> pair) {
+        this.pair = pair;
+    }
+
+    public List<Integer> getOdd() {
+        return odd;
+    }
+
+    public void setOdd(List<Integer> odd) {
+        this.odd = odd;
+    }
+
+    public List<Integer> getFinalList() {
+        return finalList;
+    }
+
+    public void setFinalList(List<Integer> finalList) {
+        this.finalList = finalList;
+    }
 
     public void bubbleSort(){
         //CRIANDO UMA ARRAY E ADICIONANDO NUMEROS ENTRE 1 E 100 NELE PARA FAZER A ORDENACAO
@@ -68,7 +99,7 @@ public class OrderBy {
             x[i] = random.nextInt(100 - 1 + 1)+1;
         }*/
         System.out.println("Lista desorndenada: ");
-        for (int i = 0; i< x.length;++i){
+        for (int i = 0; i < x.length;++i){
             System.out.print(x[i]+" ");
         }
         //OBTENDO O TAMANHO DO ARRAY DE PARES E DE IMPARES
