@@ -56,12 +56,11 @@ public class OrderBy {
         /*for (int i = 0; i < x.length; i++){
             x[i] = random.nextInt(100 - 1 + 1)+1;
         }*/
+
         System.out.println("Lista desorndenada: ");
-        for (int i = 0; i < x.length;++i){
-            System.out.print(x[i]+" ");
-        }
         //OBTENDO O TAMANHO DO ARRAY DE PARES E DE IMPARES
         for(int i = 0;i < x.length; ++i){
+            System.out.print(x[i]+" ");
             if (x[i] % 2 == 0){
                 tamanhoPar+=1;
             }else if (x[i] % 2 == 1){
@@ -103,12 +102,12 @@ public class OrderBy {
             }
         }
         System.out.println("\nNumeros pares: ");
-        for (int i = 0;i < pares.length;++i){
-            System.out.print(pares[i]+" ");
+        for (int y : pares) {
+            System.out.print(y + " ");
         }
         System.out.println("\nNumeros impares: ");
-        for (int i = 0; i< impares.length; ++i){
-            System.out.print(impares[i]+" ");
+        for (int y : impares) {
+            System.out.print(y + " ");
         }
 
         //REFAZENDO A LISTA COM OS NUMEROS PARES E IMPARES
@@ -121,8 +120,8 @@ public class OrderBy {
             }
         }
         System.out.println("\nNumeros ordenados: ");
-        for (int i = 0; i< x.length; ++i){
-            System.out.print(x[i]+" ");
+        for (int i: x) {
+            System.out.println(i + " ");
         }
 
     }

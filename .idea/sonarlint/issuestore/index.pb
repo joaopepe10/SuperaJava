@@ -5,10 +5,6 @@ I
 src/desafios/d2/Main.java,3\3\3354b813a8ea3c5bcb2266f1b1d7ecb122d5f1f4
 N
 src/desafios/d2/MinGrades.java,7\8\78d9dabe23ac7b7c49c80afd2876123cc5e7d662
-I
-src/desafios/d1/Main.java,a\8\a8766492c494c02851890312a27f48f4665949c4
-I
-src/desafios/d1/Menu.java,a\6\a6bf2f2d43c617e3a01a15f05d55db1da3948f26
 Å
 Q.idea/sonarlint/securityhotspotstore/3/3/3354b813a8ea3c5bcb2266f1b1d7ecb122d5f1f4,3\7\3779a5a4edbce3075aa13437209690d69978570c
 Å
