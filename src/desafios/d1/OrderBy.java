@@ -16,9 +16,6 @@ public class OrderBy {
         this.numbers = n;
     }
 
-    public OrderBy(Integer i){
-        this.numbers.add(i);
-    }
 
     //Ordenacao atraves da classe ArrayList
     public List<Integer> orderBy(){
@@ -40,52 +37,13 @@ public class OrderBy {
     }
     public List<Integer> orderByLambda(){
         //USANDO A FUNCAO LAMBDA PARA DEIXAR O CODIGO MENOR E MAIS FACIL DE VIZUALIZAR
-        this.numbers.forEach((v)->{
-            if (v % 2 == 0){
-                pair.add(v);
-            }else {
-                odd.add(v);
-            }
-        });
+        this.numbers.forEach(v -> {if (v % 2 == 0){pair.add(v);} else {odd.add(v);}});
         pair.sort(Comparator.naturalOrder());
         odd.sort(Comparator.reverseOrder());
 
         this.finalList.addAll(this.pair);
         this.finalList.addAll(this.odd);
         return this.finalList;
-    }
-
-
-    public List<Integer> getNumbers() {
-        return numbers;
-    }
-
-    public void setNumbers(List<Integer> numbers) {
-        this.numbers = numbers;
-    }
-
-    public List<Integer> getPair() {
-        return pair;
-    }
-
-    public void setPair(List<Integer> pair) {
-        this.pair = pair;
-    }
-
-    public List<Integer> getOdd() {
-        return odd;
-    }
-
-    public void setOdd(List<Integer> odd) {
-        this.odd = odd;
-    }
-
-    public List<Integer> getFinalList() {
-        return finalList;
-    }
-
-    public void setFinalList(List<Integer> finalList) {
-        this.finalList = finalList;
     }
 
     public void bubbleSort(){
@@ -167,5 +125,37 @@ public class OrderBy {
             System.out.print(x[i]+" ");
         }
 
+    }
+
+    public List<Integer> getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(List<Integer> numbers) {
+        this.numbers = numbers;
+    }
+
+    public List<Integer> getPair() {
+        return pair;
+    }
+
+    public void setPair(List<Integer> pair) {
+        this.pair = pair;
+    }
+
+    public List<Integer> getOdd() {
+        return odd;
+    }
+
+    public void setOdd(List<Integer> odd) {
+        this.odd = odd;
+    }
+
+    public List<Integer> getFinalList() {
+        return finalList;
+    }
+
+    public void setFinalList(List<Integer> finalList) {
+        this.finalList = finalList;
     }
 }
